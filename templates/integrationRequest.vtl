@@ -1,0 +1,9 @@
+{
+  #if( $input.params('petType') == "cat" )
+    "statusCode": 200
+  #elseif( $input.params('petType') == "dog" )
+    "statusCode": 400
+  #else
+    "statusCode": 500
+  #end
+}
